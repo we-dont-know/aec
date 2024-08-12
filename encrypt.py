@@ -52,5 +52,5 @@ def main():
     write_file('encrypted_example.bin', encrypted_content)
     write_file('decrypted_example.txt', decrypted_content)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
