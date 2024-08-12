@@ -22,5 +22,5 @@ def main():
     print("\n starting packet sniffing")
     sniff_packets(interface,filter)
 
-if _name_ =='_main_':
+if __name__ =='__main__':
     main()
