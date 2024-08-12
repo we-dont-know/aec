@@ -1,14 +1,14 @@
 #Incident report prog5 part B
 class SecurityIncident:
-    def _init_(self, incident_type, description):
+    def __init__(self, incident_type, description): # Corrected constructor name
         self.incident_type = incident_type
         self.description = description
 
-    def _str_(self):
+    def __str__(self): # Corrected string representation method name
         return f"type: {self.incident_type}, description: {self.description}"
     
 class IncidentReporter:
-    def _init_(self):
+    def __init__(self): 
         self.incidents = []
 
     def report_incident(self, incident_type, description):
