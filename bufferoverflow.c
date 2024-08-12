@@ -2,11 +2,11 @@
 #include<string.h>
 int main()
 {
-char buff;
+char buff[8];
 int pass=0;
 printf("enter the password\n");
 gets(buff);
-if(strcmp(buff,"thebufferstuff"))
+if(strcmp(buff,"password"))
 {
 printf("\nwrong password");
 }
