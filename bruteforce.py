@@ -3,7 +3,7 @@ from collections import defaultdict
 import time
 
 class BruteForceDetector:
-    def _init_(self, max_attempts, time_window):
+    def __init__(self, max_attempts, time_window): # Corrected constructor name
         self.attempts = defaultdict(lambda: (0, 0))
         self.max_attempts = max_attempts
         self.time_window = time_window
@@ -38,5 +38,5 @@ def main():
     if not any(detector.log_attempts(ip) for ip in test_ips):
         print("No brute force detected")
 
-if _name_ == "_main_":
+if __name__ == "__main__": # Corrected the if condition to use __name__
     main()
